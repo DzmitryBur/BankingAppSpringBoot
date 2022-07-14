@@ -26,20 +26,20 @@ public class UserController {
 
         return userService.getUser(id);
     }
-
-    @PostMapping
-    User createUser(@RequestBody User user) {
-        return userService.createUser(HttpStatus.CREATED);
-    }
-
-    @PutMapping
-    User updateUser(@RequestBody User user) {
-        return userService.updateUser(HttpStatus.OK);
-    }
-
-    @DeleteMapping("/{id}")
-    User deleteUser(@PathVariable long id) {
-        return userService.deleteUser(id);
-    }
+//
+//    @PostMapping
+//    User createUser(@RequestBody User user) {
+//        return userService.createUser(HttpStatus.CREATED);
+//    }
+//
+//    @PutMapping
+//    User updateUser(@RequestBody User user) {
+//        return userService.updateUser(HttpStatus.OK);
+//    }
+//
+//    @DeleteMapping("/{id}")
+//    User deleteUser(@PathVariable long id) {
+//        return userService.deleteUser(id);
+//    }
 
 }
