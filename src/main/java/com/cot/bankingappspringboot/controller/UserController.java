@@ -29,7 +29,6 @@ public class UserController {
 
     @PostMapping
     User createUser(@RequestBody User user) {
-
         return userService.createUser(HttpStatus.CREATED);
     }
 

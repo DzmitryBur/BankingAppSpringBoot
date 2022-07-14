@@ -12,8 +12,8 @@ import java.util.List;
 @Service
 public class UserService implements UserRepository {
 
-    JdbcTemplate jdbcTemplate;
-    UserMapper userMapper;
+    private JdbcTemplate jdbcTemplate;
+    private UserMapper userMapper;
 
     @Autowired
     public UserService(JdbcTemplate jdbcTemplate, UserMapper userMapper) {
